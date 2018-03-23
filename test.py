@@ -3,7 +3,7 @@
 import os
 
 def backup_data():
-    shell_str= 'find /tmp/test -name "*.zip" -mtime -1 | xargs -I {} cp {} /tmp/backup'
+    shell_str= 'find /tmp/test -name "*.gzip" -mtime -1 | xargs -I {} cp {} /tmp/backup'
     os.system(shell_str)
 
 def run():
